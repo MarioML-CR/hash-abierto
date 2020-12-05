@@ -14,16 +14,16 @@ Gestor::Gestor() {
 }
 
 int Gestor::hashing(long num) {
-//    return (num%(TablaHash::MAX-1));
-    int valor = 29;
-    return (num % valor);
+    return (num%(TablaHash::MAX-1));
+//    int valor = 29;
+//    return (num % valor);
 }
 
 void Gestor::addValores(int pValor) {
     tablaHash->addValor(hashing(pValor), new Valores(pValor));
 }
 
-string Gestor::obtenerValor(int pValor) {
+string Gestor::optenerValor(int pValor) {
     Valores * valor = tablaHash->getNumero(hashing(pValor),pValor);
     string msg;
     if (valor != nullptr){

@@ -76,7 +76,7 @@ void addValores(){
 
 void buscarValores(){
     string msg = "Ingrese el número que desea buscar\n";
-    cout << gestor.obtenerValor(ingresarNum(msg));
+    cout << gestor.optenerValor(ingresarNum(msg));
 }
 void nPrimoMenorQue(){
     int valorRevision = ingresarNum("Ingrese el tamaño del arreglo");

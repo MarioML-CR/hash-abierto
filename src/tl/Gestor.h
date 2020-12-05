@@ -14,7 +14,7 @@ public:
 
     void addValores(int );
 
-    string obtenerValor(int);
+    string optenerValor(int);
     int hashing(long);
 private:
     TablaHash *tablaHash;
